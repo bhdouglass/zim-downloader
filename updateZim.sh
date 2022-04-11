@@ -3,7 +3,7 @@
 #for l in $(cat files_direct.txt); do if [[ "${l:0:1}" != "#" ]]; then echo -e "\e[91m$l\e[0m"; else echo -e "\e[93mComment - $l\e[0m"; fi done^C
 for l in $(cat files_direct.txt);
 do
-	if [[ "${l:0:1}" != "#" ]]; 
+	if [[ "${l:0:1}" != "#" ]];
 	then
 		name=$(echo $l | sed 's/https:\/\/download.kiwix.org\/zim\///g' )
 		rm -rf sha256/$name.sha2356
@@ -16,7 +16,7 @@ do
 			#if the hash-file for the local zim file does not exist - calculate it
 			if [[ -f "$name.sha256.local" ]]; then
 				sha256_current_file=$(cat $name.sha256.local)
-			else 
+			else
 				echo -e "\e[93mcalculating sha256 for file: $name\e[0m"
 				sha256_current_file=$(sha256sum $name | cut -d" " -f1)
 				echo $sha256_current_file >  $name.sha256.local
@@ -31,9 +31,9 @@ do
 				curl $l -q --show-progress -o $name
 				#update the sha256 file with the has from the online file
 				curl $l.sha256 | cut -d" " -f1 > "$name.sha256.local"
-			else 
+			else
 				echo -e "\e[96mSHA256 of files matches\e[0m"
-			
+
 			fi
 		else
 			echo -e "\e[93mFile does not exist -> download it\e[0m"
@@ -44,7 +44,7 @@ do
 	fi
 done
 
-#cleanup files 
+#cleanup files
 #remove duplicate files:
 for f in $(ls | grep -e "\.zim\.[2-9]"); do rm $f; done
 #delete empty files:
@@ -52,7 +52,13 @@ for f in $(ls *.zim*); do echo -e "\e[91m$f\e[0m"; if [[ $(file $f | grep empty)
 #move .1-files
 for f in $(ls | grep -e \.zim\.1$); do mv $f  $(echo $f | sed 's/\.1$//g'); done
 
+# Update zim library
+zim_files=$(ls | grep -e "\.zim$")
+#add every zim-file to lib
+for f in $zim_files;
+do
+	echo -e "\e[93mAdding file: $f to library \e[0m"
 
-#update zim library and start server:
-./startServer.st
-
+	# Get the tools from https://download.kiwix.org/release/kiwix-tools/
+	./kiwix-tools/kiwix-manage $(pwd)/library.xml add $(pwd)/$f
+done
