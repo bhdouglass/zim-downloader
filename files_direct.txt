@@ -1,4 +1,4 @@
-https://download.kiwix.org/zim/wikipedia_en_all_nopic.zim
+https://download.kiwix.org/zim/wikipedia_en_all_maxi.zim
 https://download.kiwix.org/zim/archlinux_en_all_maxi.zim
 https://download.kiwix.org/zim/arduino.stackexchange.com_en_all.zim
 https://download.kiwix.org/zim/astronomy.stackexchange.com_en_all.zim
