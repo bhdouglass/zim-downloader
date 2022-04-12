@@ -27,3 +27,4 @@ https://download.kiwix.org/zim/zimgit-knots_en.zim
 https://download.kiwix.org/zim/zimgit-medicine_en.zim
 https://download.kiwix.org/zim/zimgit-post-disaster_en.zim
 https://download.kiwix.org/zim/zimgit-water_en.zim
+https://download.kiwix.org/zim/stackoverflow.com_en_all.zim
