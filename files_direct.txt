@@ -11,6 +11,7 @@ https://download.kiwix.org/zim/developer.mozilla.org_en_all.zim
 https://download.kiwix.org/zim/diy.stackexchange.com_en_all.zim
 https://download.kiwix.org/zim/energypedia_en_all_maxi.zim
 https://download.kiwix.org/zim/gardening.stackexchange.com_en_all.zim
+https://download.kiwix.org/zim/gutenberg_en_all.zim
 https://download.kiwix.org/zim/money.stackexchange.com_en_all.zim
 https://download.kiwix.org/zim/opensource.stackexchange.com_en_all.zim
 https://download.kiwix.org/zim/openstreetmap_en_all_maxi.zim
@@ -20,6 +21,7 @@ https://download.kiwix.org/zim/raspberrypi.stackexchange.com_en_all.zim
 https://download.kiwix.org/zim/ready-gov.zim
 https://download.kiwix.org/zim/serverfault.com_en_all.zim
 https://download.kiwix.org/zim/softwareengineering.stackexchange.com_en_all.zim
+https://download.kiwix.org/zim/stackoverflow.com_en_all.zim
 https://download.kiwix.org/zim/sustainability.stackexchange.com_en_all.zim
 https://download.kiwix.org/zim/woodworking.stackexchange.com_en_all.zim
 https://download.kiwix.org/zim/zimgit-food-preparation_en.zim
@@ -27,4 +29,3 @@ https://download.kiwix.org/zim/zimgit-knots_en.zim
 https://download.kiwix.org/zim/zimgit-medicine_en.zim
 https://download.kiwix.org/zim/zimgit-post-disaster_en.zim
 https://download.kiwix.org/zim/zimgit-water_en.zim
-https://download.kiwix.org/zim/stackoverflow.com_en_all.zim
